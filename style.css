@@ -1,7 +1,12 @@
 :root
 
+font-family: 'Outfit', sans-serif;
 font-size: 11px; text-align: center;
 color: hsl(228, 45%, 44%);
+color: hsl(0, 0%, 100%);
+color: hsl(212, 45%, 89%);
+color: hsl(220, 15%, 55%);
+color: hsl(218, 44%, 22%);
 
 * {
     margin: 0;
@@ -15,4 +20,43 @@ html {
 
 body {
     display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: hsl(212, 45%, 89%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    max-width: 400px;
+    padding: 20px;
+    background: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+
+.qrcode {
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.header {
+    align-self: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+.subheader {
+    align-self: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+.attribution {
+    align-self: flex-end;
 }
